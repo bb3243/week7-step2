@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trump's Tweets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <section class="project_container">
+        <h1>Trump's tweets Comparison</h1>
+        <p class="project_heading"> Since January 2020, Trump Tweeted : <span id="Trump-tweet"></span> times</p>
+        <div class="project_search">
+            <p>Enter the words you want to compare:</p>
+            <div class="project_entry">
+                <input type="text" placeholder="Search for a word" id="trump-input"></input>
+                <input type="text" placeholder="Search for a second word" id="trump-input2"></input>
+                <button id="trump-button">Find</button>     
+            </div>
+            <p class="warning">The research can take up to <span class="underline">one minute</span>.</p>   
+        </div>
+        <div id="canvas-container"></div>
+
+        <div class="total-tracker">
+            <button id="words-tracker"> Previous Words</button>
+            <div id="words-info">
+                
+            </div>
+        </div>
+
+        <p> - Or -</p>
+        <button id="trump-random-button">Random Tweet</button>
+
+        <div class="trump_info">
+            
+             <div><span class="trump_search" id="t-search"> </span></div> 
+             <div><span class="trump_nbr" id="t-nbr"> </span></div> 
+             <div> <span class="trump_txt" id="t-txt"> </span></div> 
+             <div><span class="trump_favorite" id="t-favorite"> </span></div> 
+             <div><span class="trump_retweet" id="t-retweet"> </span></div> 
+             <div><span class="trump_isRetweet" id="t-isRetweet"> </span></div> 
+        </div>
+        
+    </section>
+
+    <script src="p5.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
